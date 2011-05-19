@@ -8,10 +8,9 @@
 
 var SVGometer = (function() { /* Begin class definition */
 	
-	function SVGometer(jqElement)
+	function SVGometer(jqElement, url)
 	{
-		jqElement.empty();
-		var meter = jQuery("Hello world");
-		jqElement.append(meter);
-	}
-} /* End class definition */
+		jqElement.load(url);
+	};
+	
+return SVGometer;})(); /* End class definition */
