@@ -16,8 +16,7 @@
    version="1.1"
    inkscape:version="0.48.1 "
    sodipodi:docname="guage.svg"
-   style="display:inline"
-   enable-background="new">
+   style="display:inline;enable-background:new">
   <defs
      id="defs4">
     <linearGradient
@@ -326,6 +325,26 @@
        id="linearGradient3124"
        xlink:href="#linearGradient3936-4"
        inkscape:collect="always" />
+    <filter
+       inkscape:collect="always"
+       id="filter3879"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         inkscape:collect="always"
+         mode="screen"
+         in2="BackgroundImage"
+         id="feBlend3881" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3883"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         inkscape:collect="always"
+         mode="screen"
+         in2="BackgroundImage"
+         id="feBlend3885" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -335,10 +354,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="133"
-     inkscape:cy="40"
+     inkscape:cx="69.735065"
+     inkscape:cy="157.61121"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer14"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -376,7 +395,7 @@
        sodipodi:cy="435.21933"
        sodipodi:rx="182.85715"
        sodipodi:ry="182.85715"
-       d="m 505.71429,435.21933 c 0,100.98921 -81.86793,182.85715 -182.85714,182.85715 C 221.86793,618.07648 140,536.20854 140,435.21933 c 0,-100.98921 81.86793,-182.85715 182.85715,-182.85715 100.98921,0 182.85714,81.86794 182.85714,182.85715 z"
+       d="m 505.71429,435.21933 a 182.85715,182.85715 0 1 1 -365.71429,0 182.85715,182.85715 0 1 1 365.71429,0 z"
        transform="matrix(0.5424254,0,0,0.5424254,-75.125917,716.28818)" />
   </g>
   <g
@@ -432,60 +451,50 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer9"
-     inkscape:label="redzone"
-     style="display:inline"
+     id="layer14"
+     inkscape:label="greenlevel"
+     style="display:inline;filter:url(#filter3883)"
      sodipodi:insensitive="true">
     <path
        sodipodi:type="arc"
-       style="fill:#ff0000;fill-opacity:0.34705882;stroke:none;display:inline"
-       id="redzone"
-       sodipodi:cx="322.85715"
-       sodipodi:cy="435.21933"
-       sodipodi:rx="182.85715"
-       sodipodi:ry="182.85715"
-       d="M 505.71429,435.21933 A 182.85715,182.85715 0 1 1 322.85715,252.36218 l 0,182.85715 z"
-       transform="matrix(-0.30935921,0.30935921,-0.30935921,-0.30935921,234.51794,34.760732)"
-       sodipodi:start="0"
-       sodipodi:end="4.712389"
-       inkscape:label="#path2985-9-9-4" />
+       style="fill:none;stroke:#00ff00;stroke-width:16.0625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.3492823;stroke-dasharray:none"
+       id="greenlevel"
+       sodipodi:cx="-55.75"
+       sodipodi:cy="-4.75"
+       sodipodi:rx="64.25"
+       sodipodi:ry="64.25"
+       d="m -101.09433,40.768728 a 64.25,64.25 0 1 1 90.88581,-0.197253"
+       sodipodi:start="2.3542751"
+       sodipodi:end="7.0661622"
+       transform="matrix(1.1067877,0,0,1.1067877,61.703413,5.2572431)"
+       sodipodi:open="true"
+       inkscape:label="#path3084" />
   </g>
   <g
-     inkscape:label="greenzone"
-     id="g5705"
-     inkscape:groupmode="layer"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline;filter:url(#filter3879)"
+     inkscape:label="redlevel"
+     id="g3867"
+     inkscape:groupmode="layer">
     <path
-       inkscape:label="#path2985-9-9-4"
-       sodipodi:end="4.712389"
-       sodipodi:start="0"
-       transform="matrix(-0.30935921,0.30935921,-0.30935921,-0.30935921,234.51794,34.760732)"
-       d="M 505.71429,435.21933 A 182.85715,182.85715 0 1 1 322.85715,252.36218 l 0,182.85715 z"
-       sodipodi:ry="182.85715"
-       sodipodi:rx="182.85715"
-       sodipodi:cy="435.21933"
-       sodipodi:cx="322.85715"
-       id="greenzone"
-       style="fill:#00ff00;fill-opacity:0.34705882;stroke:none;display:inline"
+       inkscape:label="#path3084"
+       sodipodi:open="true"
+       transform="matrix(1.1067877,0,0,1.1067877,61.703413,5.2572431)"
+       sodipodi:end="7.0661622"
+       sodipodi:start="2.3542751"
+       d="m -101.09433,40.768728 a 64.25,64.25 0 1 1 90.88581,-0.197253"
+       sodipodi:ry="64.25"
+       sodipodi:rx="64.25"
+       sodipodi:cy="-4.75"
+       sodipodi:cx="-55.75"
+       id="path3869"
+       style="fill:none;stroke:#ff0000;stroke-width:16.0625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.3492823;stroke-dasharray:none"
        sodipodi:type="arc" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="Value"
-     style="display:inline"
-     sodipodi:insensitive="true">
-    <path
-       sodipodi:type="arc"
-       style="fill:#393939;fill-opacity:1;stroke:none;display:inline"
-       id="path2985-9-9-4"
-       sodipodi:cx="322.85715"
-       sodipodi:cy="435.21933"
-       sodipodi:rx="182.85715"
-       sodipodi:ry="182.85715"
-       d="m 505.71429,435.21933 a 182.85715,182.85715 0 1 1 -365.71429,0 182.85715,182.85715 0 1 1 365.71429,0 z"
-       transform="matrix(0.35546874,0,0,0.35546874,-14.765624,-54.706867)" />
+     style="display:inline">
     <rect
        style="fill:#262626;fill-opacity:1;stroke:none"
        id="rect5677"
@@ -672,7 +681,8 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="NeedleLayer"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        id="needle"
        style="fill:#ff3a00;fill-opacity:1"

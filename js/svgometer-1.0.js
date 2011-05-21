@@ -12,8 +12,8 @@ var SVGometer = (function() { /* Begin class definition */
 	{
 		jqElement.load(url, function() {
 			document.getElementById("needle").setAttribute("transform", "translate(100,100) rotate(20)");
-			document.getElementById("redzone").setAttribute("transform", "translate(100,100) rotate(0)");
-			document.getElementById("greenzone").setAttribute("transform", "translate(100,100) rotate(0)");
+			document.getElementById("greenlevel").setAttribute("transform", "translate(100,100) rotate(0)");
+			document.getElementById("redlevel").setAttribute("transform", "translate(100,100) rotate(0)");
 			document.getElementById("markers").setAttribute("transform", "translate(100,100) rotate(0)");
 		});
 	};
