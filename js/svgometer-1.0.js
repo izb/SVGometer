@@ -8,28 +8,50 @@
 
 var SVGometer = (function() { /* Begin class definition */
 	
-	function SVGometer(jqElement, url)
+	/*
+	 * Config object values:
+	 * 
+	 * {
+	 *     min: The minimum value for the meter	
+	 *     max: The maximum value for the meter	
+	 *     label: The label for the meter	
+	 * }
+	 * 
+	 */
+	
+	function SVGometer($ele, url, config)
 	{
-		jqElement.load(url, function() {
+		$ele.load(url, function() {
+			
+			$('#txtMin').text(""+config.min);
+			$('#txtMax').text(""+config.max);
+			$('#txtTitle').text(config.label);
+			
 			document.getElementById("needle").setAttribute("transform", "translate(100,100) rotate(20)");
-			document.getElementById("greenlevel").setAttribute("transform", "translate(100,100)");
-			document.getElementById("redlevel").setAttribute("transform", "translate(100,100)");
 			document.getElementById("markers").setAttribute("transform", "translate(100,100) rotate(0)");
 			
-			setRange(document.getElementById("greenpath"), 80, 100);
+			setRange(document.getElementById("redpath"), 0, 270);
+			setRange(document.getElementById("greenpath"), 10, 90);
 		});
 		
 		function setRange(ele, from, to)
 		{
-			var startx = -101.09433; /* TODO: parse the existing path data */
-			var starty = 40.768728;
+			var longarc = (to - from >= 180)? 1:0;
 			
-			var c = (Math.cos(from) * 80) + startx - 64.25;
-			var s = (Math.sin(from) * 80) + starty - 64.25;
+			from += 135;
+			to += 135;
 			
-			console.log("m "+startx+","+starty+" a 64.25,64.25 0 1 1 "+c+","+s);
+			from *= (Math.PI/180);
+			to *= (Math.PI/180);
 			
-			ele.setAttribute("d", "m "+startx+","+starty+" a 64.25,64.25 0 1 1 "+c+","+s);
+			var fx = (Math.cos(from) * 64) + 100;
+			var fy = (Math.sin(from) * 64) + 100;
+			var tx = (Math.cos(to) * 64) + 100;
+			var ty = (Math.sin(to) * 64) + 100;
+			
+			ele.setAttribute("d", "M "+fx+","+fy+" A 64,64 0 "+longarc+" 1 "+tx+","+ty);
+			
+			console.log(ele);
 		}
 	};
 	

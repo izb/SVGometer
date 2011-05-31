@@ -78,24 +78,24 @@
     <path d="m 505.71429,435.21933 a 182.85715,182.85715 0 1 1 -365.71429,0 182.85715,182.85715 0 1 1 365.71429,0 z" transform="matrix(0.46484374,0,0,0.46484374,-50.078124,-102.30898)" id="path2985-9-9" style="fill:#393939;fill-opacity:1;stroke:none"/>
   </g>
   <g id="greenlevel" style="display:inline">
-    <path id="greenpath" d="m -101.09433,40.768728 a 64.25,64.25 0 1 1 90.88581,-0.197253" transform="matrix(1.1067877,0,0,1.1067877,61.703413,5.2572431)" id="greenlevel" style="fill:none;stroke:#00ff00;stroke-width:16.0625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.3492823;stroke-dasharray:none"/>
+    <path id="greenpath" d="M 20,60 A 64.25,64.25 0 1 1 110,60" style="fill:none;stroke:#00ff00;stroke-width:16;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.35;stroke-dasharray:none"/>
   </g>
   <g id="redlevel" style="display:inline">
-    <path id="redpath" d="m -101.09433,40.768728 a 64.25,64.25 0 1 1 90.88581,-0.197253" transform="matrix(1.1067877,0,0,1.1067877,61.703413,5.2572431)" id="path3869" style="fill:none;stroke:#ff0000;stroke-width:16.0625;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.3492823;stroke-dasharray:none"/>
+    <path id="redpath" d="M 20,60 A 64.25,64.25 0 1 1 110,60" style="fill:none;stroke:#ff0000;stroke-width:16;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.35;stroke-dasharray:none"/>
   </g>
   <g id="layer8" style="display:inline">
     <rect width="50" height="15" x="75" y="151" id="rect5677" style="fill:#262626;fill-opacity:1;stroke:none"/>
     <text x="100" y="163" id="txtValue" style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans">
       <tspan x="100" y="163" id="tspan5675">00000</tspan>
     </text>
-    <text x="61.828365" y="140.91983" transform="scale(1.0074125,0.99264204)" id="txtMin" style="font-size:9.65958786px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans">
-      <tspan x="61.828365" y="140.91983" id="tspan3052">0000</tspan>
+    <text x="61.828365" y="140.91983" transform="scale(1.0074125,0.99264204)" style="font-size:9.65958786px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans">
+      <tspan x="61.828365" y="140.91983" id="txtMin">0000</tspan>
     </text>
-    <text x="136.27298" y="140.91983" transform="scale(1.0074125,0.99264204)" id="txtMax" style="font-size:9.65958786px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans">
-      <tspan x="136.27298" y="140.91983" id="tspan3056">0000</tspan>
+    <text x="136.27298" y="140.91983" transform="scale(1.0074125,0.99264204)" style="font-size:9.65958786px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans">
+      <tspan x="136.27298" y="140.91983" id="txtMax">0000</tspan>
     </text>
-    <text x="99.814438" y="66.623062" id="txtTitle" style="font-size:7.09110212px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans">
-      <tspan x="99.814438" y="66.623062" id="tspan3060">xxxxxxxxxxxxxxxxxxxx</tspan>
+    <text x="99.814438" y="66.623062" style="font-size:7.09110212px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans">
+      <tspan x="99.814438" y="66.623062" id="txtTitle">xxxxxxxxxxxxxxxxxxxx</tspan>
     </text>
   </g>
   <g id="markers" style="display:inline">
