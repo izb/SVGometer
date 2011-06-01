@@ -1,0 +1,30 @@
+.svgoMinMax {
+	font-size:9px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:125%;
+	letter-spacing:0px;
+	word-spacing:0px;
+	fill:#ffffff;
+	font-family:arial,Helvetica,sans-serif;
+}
+.svgoVal {
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	text-anchor:middle;
+	fill:#ffffff;
+	font-family:arial,Helvetica,sans-serif;
+}
+.svgoLabel {
+	font-size:8px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	font-stretch:normal;
+	text-anchor:middle;
+	fill:#ffffff;
+	font-family:arial,Helvetica,sans-serif;
+}

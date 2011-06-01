@@ -1,0 +1,9 @@
+body{
+	background-image:url('../images/demo/carbon.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+}
+#placement{
+	padding:20px;
+}
