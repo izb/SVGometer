@@ -8,7 +8,7 @@ $(document).ready(function () {
 		redmin: 2000,
 		redmax: 2500,
 		initial: 1500,
-		ticksize: 100,
+		ticksize: 50,
 		bigtickevery: 5,
 		bigtickfirst: 0
 

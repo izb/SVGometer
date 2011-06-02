@@ -47,30 +47,31 @@ var SVGometer = (function() { /* Begin class definition */
 			var tx = (Math.cos(to) * 64) + 100;
 			var ty = (Math.sin(to) * 64) + 100;
 			
-			//$('.rootmeter', $('#example2')).attr('transform', 'rotate(5)')
-			
 			$ele.attr("d", "M "+fx+","+fy+" A 64,64 0 "+longarc+" 1 "+tx+","+ty);
 		}
 		
-		function drawTicks(size, bigevery, nextbig)
+		this.drawTicks = function(size, bigevery, nextbig)
 		{
 			var $markers = $('.markers', this.$root);
-			var $mbig = $('.markerBig', $markers);
-			var $msmall = $('.markerSmall', $markers);
+			var mbig = $('.markerBig', $markers)[0];
+			var msmall = $('.markerSmall', $markers)[0];
 			
 			var pos = meter.min;
 			var idx = 0;
+			
+			var prefix = this.$root.attr('id')+"_";
+			
 			while(pos <= meter.max)
 			{
 				var $clone;
 				if (idx == nextbig)
 				{
-					$clone = $mbig.clone().attr('id', 'marker'+idx);
+					$clone = $(mbig.cloneNode(false)).attr('id', prefix+'marker'+idx);
 					nextbig += bigevery;
 				}
 				else
 				{
-					$clone = $msmall.clone().attr('id', 'marker'+idx);
+					$clone = $(msmall.cloneNode(false)).attr('id', prefix+'marker'+idx);
 				}
 				
 				$clone
@@ -81,8 +82,8 @@ var SVGometer = (function() { /* Begin class definition */
 				pos+=size;
 			}
 			
-			$mbig.hide();
-			$msmall.hide();
+			$(mbig).hide();
+			$(msmall).hide();
 		};
 		
 		$ele.load(url, function() {
@@ -110,7 +111,7 @@ var SVGometer = (function() { /* Begin class definition */
 			
 			meter.factor = 270/range;
 			
-			drawTicks(config.ticksize, config.bigtickevery, config.bigtickfirst);
+			meter.drawTicks(config.ticksize, config.bigtickevery, config.bigtickfirst);
 			
 			meter.setRange($('.redpath', $this), meter.redmin, meter.redmax);
 			meter.setRange($('.greenpath', $this), meter.greenmin, meter.greenmax);
