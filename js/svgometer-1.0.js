@@ -30,8 +30,9 @@ var SVGometer = (function() { /* Begin class definition */
 	function SVGometer($ele, url, config)
 	{
 		var meter = this;
+		this.$root = $ele;
 		
-		this.setRange = function(ele, from, to)
+		this.setRange = function($ele, from, to)
 		{
 			from *= this.factor;
 			to *= this.factor;
@@ -46,54 +47,56 @@ var SVGometer = (function() { /* Begin class definition */
 			var tx = (Math.cos(to) * 64) + 100;
 			var ty = (Math.sin(to) * 64) + 100;
 			
-			ele.setAttribute("d", "M "+fx+","+fy+" A 64,64 0 "+longarc+" 1 "+tx+","+ty);
+			//$('.rootmeter', $('#example2')).attr('transform', 'rotate(5)')
+			
+			$ele.attr("d", "M "+fx+","+fy+" A 64,64 0 "+longarc+" 1 "+tx+","+ty);
 		}
 		
 		function drawTicks(size, bigevery, nextbig)
 		{
-			var mbig = document.getElementById("markerBig");
-			var msmall = document.getElementById("markerSmall");
-			var markers = document.getElementById("markers");
+			var $markers = $('.markers', this.$root);
+			var $mbig = $('.markerBig', $markers);
+			var $msmall = $('.markerSmall', $markers);
 			
 			var pos = meter.min;
 			var idx = 0;
 			while(pos <= meter.max)
 			{
-				var clone;
+				var $clone;
 				if (idx == nextbig)
 				{
-					clone = mbig.cloneNode(false);
-					clone.setAttribute("id", "marker"+idx);
+					$clone = $mbig.clone().attr('id', 'marker'+idx);
 					nextbig += bigevery;
 				}
 				else
 				{
-					clone = msmall.cloneNode(false);
-					clone.setAttribute("id", "marker"+idx);
+					$clone = $msmall.clone().attr('id', 'marker'+idx);
 				}
-				clone.setAttribute("transform", "rotate("+((pos - meter.min) * meter.factor - 135)+")");
-				markers.appendChild(clone);
+				
+				$clone
+					.attr('transform', 'rotate('+((pos - meter.min) * meter.factor - 135)+')')
+					.appendTo($markers);
 
 				idx++;
 				pos+=size;
 			}
 			
-			mbig.setAttribute('display', 'none');
-			msmall.setAttribute('display', 'none');
+			$mbig.hide();
+			$msmall.hide();
 		};
 		
 		$ele.load(url, function() {
 			
 			var $this = $(this);
 			
-			document.getElementById("rootmeter").setAttribute("transform",
-					"scale("+$this.width()/200+","+$this.height()/200+")");
+			$('.rootmeter', $this).attr('transform',
+					'scale('+$this.width()/200+','+$this.height()/200+')');
 
-			$('#txtMin').text(""+config.min);
-			$('#txtMax').text(""+config.max);
-			$('#txtTitle').text(config.label);
+			$('.svgoMin', $this).text(""+config.min);
+			$('.svgoMax', $this).text(""+config.max);
+			$('.svgoLabel', $this).text(config.label);
 			
-			$('#glow').hide();
+			$('.glow', $this).hide();
 			
 			meter.min = config.min;
 			meter.max = config.max;
@@ -109,8 +112,8 @@ var SVGometer = (function() { /* Begin class definition */
 			
 			drawTicks(config.ticksize, config.bigtickevery, config.bigtickfirst);
 			
-			meter.setRange(document.getElementById("redpath"), meter.redmin, meter.redmax);
-			meter.setRange(document.getElementById("greenpath"), meter.greenmin, meter.greenmax);
+			meter.setRange($('.redpath', $this), meter.redmin, meter.redmax);
+			meter.setRange($('.greenpath', $this), meter.greenmin, meter.greenmax);
 			
 			meter.setValue(config.initial);
 		});
@@ -118,14 +121,14 @@ var SVGometer = (function() { /* Begin class definition */
 	
 	SVGometer.prototype.setValue = function(val) {
 		
-		$('#txtValue').text(""+val);
+		$('.svgoVal', this.$root).text(""+val);
 		
 		val = Math.max(val, this.min);
 		val = Math.min(val, this.max);
 		
 		val = (val - this.min) * this.factor - 135;
 		
-		document.getElementById("needle").setAttribute("transform", "translate(100,100) rotate("+val+")");
+		$('.needle', this.$root).attr('transform', 'translate(100,100) rotate('+val+')');
 	}
 	
 return SVGometer;})(); /* End class definition */

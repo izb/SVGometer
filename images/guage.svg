@@ -69,7 +69,7 @@
     </linearGradient>
     <linearGradient x1="110.98184" y1="123.49471" x2="110.98184" y2="93.184082" id="linearGradient3124" xlink:href="#linearGradient3936-4" gradientUnits="userSpaceOnUse"/>
   </defs>
-  <g id="rootmeter" transform="scale(1,1)">
+  <g class="rootmeter" transform="scale(1,1)">
   <g transform="translate(-8.9999999e-7,-852.35461)" id="layer1" style="display:inline">
     <path d="m 505.71429,435.21933 a 182.85715,182.85715 0 1 1 -365.71429,0 182.85715,182.85715 0 1 1 365.71429,0 z" transform="matrix(0.5424254,0,0,0.5424254,-75.125917,716.28818)" id="path2985" style="fill:url(#linearGradient3761);fill-opacity:1;stroke:none"/>
   </g>
@@ -79,21 +79,21 @@
     <path d="m 505.71429,435.21933 a 182.85715,182.85715 0 1 1 -365.71429,0 182.85715,182.85715 0 1 1 365.71429,0 z" transform="matrix(0.46484374,0,0,0.46484374,-50.078124,-102.30898)" id="path2985-9-9" style="fill:#393939;fill-opacity:1;stroke:none"/>
   </g>
   <g id="greenlevel" style="display:inline">
-    <path id="greenpath" d="M 20,60 A 64.25,64.25 0 1 1 110,60" style="fill:none;stroke:#00ff00;stroke-width:16;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.35;stroke-dasharray:none"/>
+    <path class="greenpath" d="M 20,60 A 64.25,64.25 0 1 1 110,60" style="fill:none;stroke:#00ff00;stroke-width:16;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.35;stroke-dasharray:none"/>
   </g>
   <g id="redlevel" style="display:inline">
-    <path id="redpath" d="M 20,60 A 64.25,64.25 0 1 1 110,60" style="fill:none;stroke:#ff0000;stroke-width:16;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.35;stroke-dasharray:none"/>
+    <path class="redpath" d="M 20,60 A 64.25,64.25 0 1 1 110,60" style="fill:none;stroke:#ff0000;stroke-width:16;stroke-linecap:butt;stroke-miterlimit:4;stroke-opacity:0.35;stroke-dasharray:none"/>
   </g>
   <g id="layer8" style="display:inline">
     <rect width="50" height="15" x="75" y="151" id="rect5677" style="fill:#262626;fill-opacity:1;stroke:none"/>
-    <text x="100" y="164" id="txtValue" class="svgoVal">00000</text>
-    <text x="62" y="141" id="txtMin" class="svgoMinMax" style="text-anchor:start">0000</text>
-    <text x="136" y="141" id="txtMax" class="svgoMinMax" style="text-anchor:end">0000</text>
-    <text x="100" y="67" id="txtTitle" class="svgoLabel">xxx</text>
+    <text x="100" y="164" class="svgoVal">00000</text>
+    <text x="62" y="141" class="svgoMin">0000</text>
+    <text x="136" y="141" class="svgoMax">0000</text>
+    <text x="100" y="67" class="svgoLabel">xxx</text>
   </g>
-  <g id="markers" transform="translate(100,100)" style="display:inline">
-    <rect width="2" height="15" x="-1" y="-80" id="markerBig" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
-    <rect width="1" height="10" x="-0.5" y="-78" id="markerSmall" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
+  <g class="markers" transform="translate(100,100)" style="display:inline">
+    <rect width="2" height="15" x="-1" y="-80" class="markerBig" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
+    <rect width="1" height="10" x="-0.5" y="-78" class="markerSmall" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
   </g>
   <g id="layer11" style="display:inline">
     <a transform="matrix(0.13125,0,0,0.13125,139.52834,143.52884)" id="a3871">
@@ -103,13 +103,13 @@
     <path d="m -96.5,8.75 a 40.25,40.25 0 1 1 -80.5,0 40.25,40.25 0 1 1 80.5,0 z" transform="matrix(0.1076087,0,0,0.1076087,146.36883,157.02477)" id="path3860" style="fill:url(#radialGradient3869);fill-opacity:1;stroke:none"/>
   </g>
   <g id="layer12" style="display:inline">
-    <path d="m -27.5,78 a 65,65 0 1 1 -130,0 65,65 0 1 1 130,0 z" transform="matrix(0.13057005,0,0,0.13057005,143.73221,147.15702)" id="glow" style="fill:url(#radialGradient3883);fill-opacity:1;stroke:none"/>
+    <path d="m -27.5,78 a 65,65 0 1 1 -130,0 65,65 0 1 1 130,0 z" transform="matrix(0.13057005,0,0,0.13057005,143.73221,147.15702)" class="glow" style="fill:url(#radialGradient3883);fill-opacity:1;stroke:none"/>
   </g>
   <g id="layer13" style="display:inline">
     <path d="m 134.27511,108.6121 a 22.22949,19.085926 0 1 1 -44.458977,0 22.22949,19.085926 0 1 1 44.458977,0 z" transform="matrix(0.6747793,0,0,0.78591942,24.393932,14.639642)" id="path3908" style="fill:url(#linearGradient3124);fill-opacity:1;display:inline"/>
     <path d="m 134.27511,108.6121 a 22.22949,19.085926 0 1 1 -44.458977,0 22.22949,19.085926 0 1 1 44.458977,0 z" transform="matrix(0.58480873,0,0,0.68113017,34.474741,26.021023)" id="path3908-8" style="fill:#2c2c2c;fill-opacity:1;display:inline"/>
   </g>
-  <g id="needle" style="display:inline">
+  <g class="needle" style="display:inline">
     <path d="m -3.264,0 6.527581,0 -3.263791,-66.73621 0,0 z m 0,0 1.631895,20 3.263796,0 1.63189,-20 z" style="fill:#ff3a00;fill-opacity:1"/>
   </g>
   <g id="layer4" style="opacity:0.51769912;display:inline">
