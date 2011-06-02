@@ -69,6 +69,7 @@
     </linearGradient>
     <linearGradient x1="110.98184" y1="123.49471" x2="110.98184" y2="93.184082" id="linearGradient3124" xlink:href="#linearGradient3936-4" gradientUnits="userSpaceOnUse"/>
   </defs>
+  <g id="rootmeter" transform="scale(1,1)">
   <g transform="translate(-8.9999999e-7,-852.35461)" id="layer1" style="display:inline">
     <path d="m 505.71429,435.21933 a 182.85715,182.85715 0 1 1 -365.71429,0 182.85715,182.85715 0 1 1 365.71429,0 z" transform="matrix(0.5424254,0,0,0.5424254,-75.125917,716.28818)" id="path2985" style="fill:url(#linearGradient3761);fill-opacity:1;stroke:none"/>
   </g>
@@ -114,5 +115,6 @@
   <g id="layer4" style="opacity:0.51769912;display:inline">
     <path d="M 28.53125,135.9375 C 41.69688,162.064 68.747102,180 100,180 c 31.2529,0 58.30312,-17.936 71.46875,-44.0625 C 153.31516,150.7779 128.00561,160 100,160 71.994391,160 46.684835,150.7779 28.53125,135.9375 z" id="path2985-9-9-1" style="fill:url(#linearGradient3837);fill-opacity:1;stroke:none"/>
     <path d="M 28.53125,70 C 41.69688,43.8735 68.747102,25.9375 100,25.9375 c 31.2529,0 58.30312,17.936 71.46875,44.0625 C 153.31516,55.1596 128.00561,45.9375 100,45.9375 71.994391,45.9375 46.684835,55.1596 28.53125,70 z" id="path3809" style="fill:url(#linearGradient3825);fill-opacity:1;stroke:none"/>
+  </g>
   </g>
 </svg>

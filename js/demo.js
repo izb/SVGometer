@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	new SVGometer($("#placement"), "images/guage.svg", {
+	new SVGometer($("#example1"), "images/guage.svg", {
 		min: 1000,
 		max: 2500,
 		label: "This is a test",
@@ -12,5 +12,21 @@ $(document).ready(function () {
 		bigtickevery: 5,
 		bigtickfirst: 0
 
+	});
+	
+	new SVGometer($("#example2"), "images/guage.svg", {
+		min: 0,
+		max: 3000,
+		label: "With amber",
+		greenmin: 0,
+		greenmax: 2000,
+		redmin: 1000,
+		redmax: 3000,
+		initial: 2500,
+		ticksize: 250,
+		bigtickevery: 2,
+		bigtickfirst: 0
+
 	});		
+
 });

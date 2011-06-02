@@ -7,3 +7,10 @@ body{
 #placement{
 	padding:20px;
 }
+.examplemeter {
+	color: white;
+	font-family: arial,helvetica,sans-serif;
+	font-size:14px;
+	float:left;
+	text-align:center;
+}

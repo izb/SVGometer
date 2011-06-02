@@ -84,6 +84,11 @@ var SVGometer = (function() { /* Begin class definition */
 		
 		$ele.load(url, function() {
 			
+			var $this = $(this);
+			
+			document.getElementById("rootmeter").setAttribute("transform",
+					"scale("+$this.width()/200+","+$this.height()/200+")");
+
 			$('#txtMin').text(""+config.min);
 			$('#txtMax').text(""+config.max);
 			$('#txtTitle').text(config.label);
