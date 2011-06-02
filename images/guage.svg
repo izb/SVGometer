@@ -92,8 +92,8 @@
     <text x="100" y="67" class="svgoLabel">xxx</text>
   </g>
   <g class="markers" transform="translate(100,100)" style="display:inline">
-    <rect width="2" height="15" x="-1" y="-80" class="markerBig" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
-    <rect width="1" height="10" x="-0.5" y="-78" class="markerSmall" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
+    <rect width="2" height="16" x="-1" y="-80" class="markerBig" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
+    <rect width="0.5" height="8" x="-0.25" y="-76" class="markerSmall" style="fill:#dddddd;fill-opacity:1;stroke:none"/>
   </g>
   <g id="layer11" style="display:inline">
     <a transform="matrix(0.13125,0,0,0.13125,139.52834,143.52884)" id="a3871">

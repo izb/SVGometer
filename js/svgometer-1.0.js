@@ -42,12 +42,12 @@ var SVGometer = (function() { /* Begin class definition */
 			from = (from + 135) * (Math.PI/180);
 			to = (to + 135) * (Math.PI/180);
 			
-			var fx = (Math.cos(from) * 64) + 100;
-			var fy = (Math.sin(from) * 64) + 100;
-			var tx = (Math.cos(to) * 64) + 100;
-			var ty = (Math.sin(to) * 64) + 100;
+			var fx = (Math.cos(from) * 72) + 100;
+			var fy = (Math.sin(from) * 72) + 100;
+			var tx = (Math.cos(to) * 72) + 100;
+			var ty = (Math.sin(to) * 72) + 100;
 			
-			$ele.attr("d", "M "+fx+","+fy+" A 64,64 0 "+longarc+" 1 "+tx+","+ty);
+			$ele.attr("d", "M "+fx+","+fy+" A 72,72 0 "+longarc+" 1 "+tx+","+ty);
 		}
 		
 		this.drawTicks = function(size, bigevery, nextbig)
@@ -66,15 +66,16 @@ var SVGometer = (function() { /* Begin class definition */
 				var $clone;
 				if (idx == nextbig)
 				{
-					$clone = $(mbig.cloneNode(false)).attr('id', prefix+'marker'+idx);
+					$clone = $(mbig.cloneNode(false));
 					nextbig += bigevery;
 				}
 				else
 				{
-					$clone = $(msmall.cloneNode(false)).attr('id', prefix+'marker'+idx);
+					$clone = $(msmall.cloneNode(false));
 				}
 				
 				$clone
+					.attr('id', prefix+'marker'+idx)
 					.attr('transform', 'rotate('+((pos - meter.min) * meter.factor - 135)+')')
 					.appendTo($markers);
 
@@ -86,7 +87,8 @@ var SVGometer = (function() { /* Begin class definition */
 			$(msmall).hide();
 		};
 		
-		$ele.load(url, function() {
+		//$ele.svg({initPath:'jquery.svg.package-1.4.3/'}).load(url, { addTo: false, changeSize: false, onLoad: function() {
+		$ele.svg().svg('get').load(url, { addTo: false, changeSize: false, onLoad: function() {
 			
 			var $this = $(this);
 			
@@ -117,7 +119,7 @@ var SVGometer = (function() { /* Begin class definition */
 			meter.setRange($('.greenpath', $this), meter.greenmin, meter.greenmax);
 			
 			meter.setValue(config.initial);
-		});
+		}});
 	};
 	
 	SVGometer.prototype.setValue = function(val) {
