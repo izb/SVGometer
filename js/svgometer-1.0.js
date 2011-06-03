@@ -87,7 +87,7 @@ var SVGometer = (function() { /* Begin class definition */
 			$(msmall).hide();
 		};
 		
-		//$ele.svg({initPath:'jquery.svg.package-1.4.3/'}).load(url, { addTo: false, changeSize: false, onLoad: function() {
+		//$ele.svg({initPath:'jquery.svg/'}).load(url, { addTo: false, changeSize: false, onLoad: function() {
 		$ele.svg().svg('get').load(url, { addTo: false, changeSize: false, onLoad: function() {
 			
 			var $this = $(this);
