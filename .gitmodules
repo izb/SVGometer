@@ -1,3 +1,3 @@
 [submodule "src/jquery.svg"]
-	path = src/jquery.svg
+	path = js/jquery.svg
 	url = git://github.com/izb/jquery.svg.git
